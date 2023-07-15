@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>AutoScraper-Shreeganesh</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="static/styles.css">
+    </head>
+    <body>         
+        <!-- top header -->       
+        <div class="header">
+            <div class="row" style="margin-right: -10px;">
+                <!-- logo -->
+                <!-- search form -->
+                <div class="col-md-8 col-xs-12">
+                    <form method="get" accept="/" style="margin: 0px;">
+                        <div class="input-group-append">
+                            <span class="input-group-text">Search PG's Here</span>
+                        </div>
+                        <input type="text" name="search" class="form-control" placeholder="Enter place name"  value="{{data.query}}">
+                        <div class="input-group-button">
+                          <button class="btn-outline-secondary" type="submit">Search<i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> 
+        <h1>Search Results</h1>
+        <h2>Area: {{ data.query }}</h2>
+        
+        <table border="1%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Rating</th>
+                    <th>Phone no</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in data.searchData %}
+                    <tr>
+                        <td>{{ item[0] }}</td>
+                        <td>{{ item[1] }}</td>
+                        <td>{{ item[3] }}</td>
+                        <td>{{ item[2] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,115 @@
+/* styles.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.header {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.row {
+    margin-right: -10px;
+}
+
+/* Search form styles */
+.input-group-append {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.input-group-append::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #febd69;
+    margin: 10px auto;
+}
+
+.input-group-append span {
+    padding: 8px;
+    color: #181717;
+    border: none;
+}
+
+.input-group-button button {
+    background-color: #febd69;
+    border: none;
+    color: #181717;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.input-group-append button:hover {
+    background-color: #ffaa00;
+}
+
+/* Text box styles */
+input.form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input.form-control:focus {
+    outline: none;
+    border-color: #febd69;
+    box-shadow: 0 0 5px #febd69;
+}
+
+input.form-control::placeholder {
+    color: #999;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Table header */
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  th {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Table rows */
+  td {
+    padding: 10px;
+  }
+  
+  /* Alternating row colors */
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Hover effect on rows */
+  tbody tr:hover {
+    background-color: #e6e6e6;
+  }
+  
+  /* Optional: Add border to cells */
+  td, th {
+    border: 1px solid #ddd;
+  }  
